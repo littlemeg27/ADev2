@@ -3,11 +3,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.offlineapistorage"
+    namespace = "com.example.employeemanager"
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "com.example.offlineapistorage"
+        applicationId = "com.example.employeemanager"
         minSdk = 24
         targetSdk = 35
         versionCode = 1
@@ -26,14 +26,13 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_11
-        targetCompatibility = JavaVersion.VERSION_11
+        sourceCompatibility = JavaVersion.VERSION_14
+        targetCompatibility = JavaVersion.VERSION_14
     }
 }
 
 dependencies {
-
-    implementation(libs.json)
+    implementation(libs.preference)
     implementation(libs.appcompat)
     implementation(libs.material)
     implementation(libs.activity)

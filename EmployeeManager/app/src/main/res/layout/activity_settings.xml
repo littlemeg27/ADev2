@@ -5,13 +5,16 @@
     android:orientation="vertical"
     android:padding="16dp">
 
-    <Spinner
-        android:id="@+id/spinner"
+    <TextView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:text="Date Format"
+        android:textSize="16sp"/>
 
-    <ListView
-        android:id="@+id/listView"
+    <Spinner
+        android:id="@+id/dateFormatSpinner"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"/>
+
 </LinearLayout>
