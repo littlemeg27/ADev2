@@ -2,5 +2,5 @@
     <item
         android:id="@+id/action_pick_image"
         android:icon="@android:drawable/ic_menu_gallery"
-        android:title="Pick Image"/>
+        android:title="@string/action_pick_image"/>
 </menu>
