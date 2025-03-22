@@ -4,4 +4,5 @@
     <string name="captured_image_description">Captured image</string>
     <string name="delete_button_text">Delete</string>
     <string name="action_take_picture">Take Picture</string>
+    <string name="take_picture">Take Picture</string>
 </resources>

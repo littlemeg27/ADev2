@@ -22,6 +22,7 @@ import androidx.lifecycle.Lifecycle;
 
 public class ImageDisplayFragment extends Fragment
 {
+    private static final String TAG = "ImageDisplayFragment";
     private ImageView imageView;
     private ActivityResultLauncher<Intent> pickImageLauncher;
 
@@ -40,9 +41,17 @@ public class ImageDisplayFragment extends Fragment
                         Uri uri = result.getData().getData();
                         if (uri != null)
                         {
-                            Log.d("AppB", "Received URI from App A: " + uri);
+                            Log.d(TAG, "Received URI from App A: " + uri);
                             imageView.setImageURI(uri);
                         }
+                        else
+                        {
+                            Log.w(TAG, "No URI received from App A");
+                        }
+                    }
+                    else
+                    {
+                        Log.w(TAG, "Image pick failed or was canceled");
                     }
                 });
 
@@ -62,7 +71,14 @@ public class ImageDisplayFragment extends Fragment
                     Intent pickIntent = new Intent(Intent.ACTION_PICK);
                     pickIntent.setType("image/*");
                     pickIntent.setPackage("com.example.appa");
-                    pickImageLauncher.launch(pickIntent);
+                    try
+                    {
+                        pickImageLauncher.launch(pickIntent);
+                    }
+                    catch (Exception e)
+                    {
+                        Log.e(TAG, "Failed to launch image picker", e);
+                    }
                     return true;
                 }
                 return false;

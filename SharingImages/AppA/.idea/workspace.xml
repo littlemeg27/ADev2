@@ -37,69 +37,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="52b622aa-ff39-438d-a297-bd2e82c04d80" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../../ContactData/app/src/main/java/com/example/contactdata/ContactAdapter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ContactData/app/src/main/java/com/example/contactdata/ContactDetailsFragment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ContactData/app/src/main/java/com/example/contactdata/ContactHelper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ContactData/app/src/main/java/com/example/contactdata/ContactListFragment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ContactData/app/src/main/res/layout-land/activity_main.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ContactData/app/src/main/res/layout/fragment_contact_details.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ContactData/app/src/main/res/layout/fragment_contact_list.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ContactData/app/src/main/res/layout/item_contact.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../SharingData/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../SharingData/.idea/AndroidProjectSystem.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../SharingData/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../SharingData/.idea/deploymentTargetSelector.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../SharingData/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../SharingData/.idea/migrations.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../SharingData/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../SharingData/.idea/runConfigurations.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../SharingData/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../SharingData/app/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../SharingData/app/build.gradle.kts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../SharingData/app/proguard-rules.pro" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../SharingData/app/src/androidTest/java/com/example/sharingdata/ExampleInstrumentedTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../SharingData/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../SharingData/app/src/main/java/com/example/sharingdata/BookContentProvider.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../SharingData/app/src/main/java/com/example/sharingdata/BookDatabaseHelper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../SharingData/app/src/main/java/com/example/sharingdata/HostContract.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../SharingData/app/src/main/java/com/example/sharingdata/MainActivity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../SharingData/app/src/main/java/com/example/sharingdata/StatusFragment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../SharingData/app/src/main/res/drawable/ic_launcher_background.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../SharingData/app/src/main/res/drawable/ic_launcher_foreground.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../SharingData/app/src/main/res/layout/activity_main.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../SharingData/app/src/main/res/layout/fragment_status.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../SharingData/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../SharingData/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../SharingData/app/src/main/res/mipmap-hdpi/ic_launcher.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../SharingData/app/src/main/res/mipmap-hdpi/ic_launcher_round.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../SharingData/app/src/main/res/mipmap-mdpi/ic_launcher.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../SharingData/app/src/main/res/mipmap-mdpi/ic_launcher_round.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../SharingData/app/src/main/res/mipmap-xhdpi/ic_launcher.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../SharingData/app/src/main/res/mipmap-xhdpi/ic_launcher_round.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../SharingData/app/src/main/res/mipmap-xxhdpi/ic_launcher.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../SharingData/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../SharingData/app/src/main/res/mipmap-xxxhdpi/ic_launcher.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../SharingData/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../SharingData/app/src/main/res/values-night/themes.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../SharingData/app/src/main/res/values/colors.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../SharingData/app/src/main/res/values/strings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../SharingData/app/src/main/res/values/styles.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../SharingData/app/src/main/res/values/themes.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../SharingData/app/src/main/res/xml/backup_rules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../SharingData/app/src/main/res/xml/data_extraction_rules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../SharingData/app/src/test/java/com/example/sharingdata/ExampleUnitTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../SharingData/build.gradle.kts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../SharingData/gradle.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../SharingData/gradle/libs.versions.toml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../SharingData/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../SharingData/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../SharingData/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../SharingData/settings.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/appa/ImageAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/appa/ImageAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/values/styles.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AppB/app/src/main/res/values/styles.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/appa/ImageGridFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/appa/ImageGridFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/appa/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/appa/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_image_grid.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_image_grid.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/xml/file_paths.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/xml/file_paths.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AppB/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../AppB/app/src/main/AndroidManifest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../AppB/app/src/main/java/com/example/appb/ImageDisplayFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/../AppB/app/src/main/java/com/example/appb/ImageDisplayFragment.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../AppB/app/src/main/java/com/example/appb/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../AppB/app/src/main/java/com/example/appb/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AppB/app/src/main/res/layout/fragment_image_display.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../AppB/app/src/main/res/layout/fragment_image_display.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AppB/app/src/main/res/menu/menu_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../AppB/app/src/main/res/menu/menu_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AppB/app/src/main/res/values/colors.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../AppB/app/src/main/res/values/colors.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AppB/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../AppB/app/src/main/res/values/strings.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,6 +74,7 @@
         <option value="resourceFile" />
         <option value="Class" />
         <option value="layoutResourceFile" />
+        <option value="valueResourceFile" />
       </list>
     </option>
   </component>
@@ -147,27 +101,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Android App.app.executor": "Run",
-    "ApkExportedModule": "AppA.app",
-    "ExportApk.ApkPathForAppA.app": "/Users/ravenmargret/MobileDevelopment/ADev2/SharingImages/AppA/app",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.cidr.known.project.marker": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.readMode.enableVisualFormatting": "true",
-    "cf.first.check.clang-format": "false",
-    "cidr.known.project.marker": "true",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/ravenmargret/MobileDevelopment/ADev2/SharingImages/AppA/build.gradle.kts"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Android App.app.executor&quot;: &quot;Run&quot;,
+    &quot;ApkExportedModule&quot;: &quot;AppA.app&quot;,
+    &quot;ExportApk.ApkPathForAppA.app&quot;: &quot;/Users/ravenmargret/MobileDevelopment/ADev2/SharingImages/AppA/app&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.readMode.enableVisualFormatting&quot;: &quot;true&quot;,
+    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/ravenmargret/MobileDevelopment/ADev2/SharingImages/AppA/build.gradle.kts&quot;
   },
-  "keyToStringList": {
-    "ExportApk.BuildVariants": [
-      "release"
+  &quot;keyToStringList&quot;: {
+    &quot;ExportApk.BuildVariants&quot;: [
+      &quot;release&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
       <module name="AppA.app" />
@@ -258,12 +212,12 @@
       <map>
         <entry key="com.example.appa">
           <value>
-            <CheckInfo lastCheckTimestamp="1742175756553" />
+            <CheckInfo lastCheckTimestamp="1742522324560" />
           </value>
         </entry>
         <entry key="com.example.appa.test">
           <value>
-            <CheckInfo lastCheckTimestamp="1742175756578" />
+            <CheckInfo lastCheckTimestamp="1742522324549" />
           </value>
         </entry>
       </map>
