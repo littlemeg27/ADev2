@@ -1,5 +1,0 @@
-<resources>
-    <string name="app_name">Offline API Storage</string>
-    <string name="author_format">by %1$s</string>
-    <string name="score_format">Score: %1$d</string>
-</resources>

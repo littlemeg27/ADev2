@@ -1,5 +1,6 @@
 package com.example.downloadworker;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
@@ -12,6 +13,7 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.DiffUtil;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import java.io.File;
@@ -45,8 +47,9 @@ public class ImageGridFragment extends Fragment {
             // API 26+ (Android 8.0 and above)
             requireContext().registerReceiver(imageUpdateReceiver, filter, Context.RECEIVER_NOT_EXPORTED);
         } else {
-            // API 24 and 25 (Android 7.0 and 7.1)
-            requireContext().registerReceiver(imageUpdateReceiver, filter);
+            // API 24 and 25 (Android 7.0 and 7.1) - Suppress lint warning
+            @SuppressLint("UnprotectedReceiver")
+            Intent ignored = requireContext().registerReceiver(imageUpdateReceiver, filter);
         }
 
         return view;
@@ -59,9 +62,8 @@ public class ImageGridFragment extends Fragment {
     }
 
     public void loadImages() {
-        int startPosition = imageUris.size();
-        imageUris.clear();
-
+        // Create a new list to hold the updated URIs
+        List<Uri> newImageUris = new ArrayList<>();
         File storageDir = requireContext().getDir("images", Context.MODE_PRIVATE);
         File[] files = storageDir.listFiles();
         if (files != null) {
@@ -71,17 +73,15 @@ public class ImageGridFragment extends Fragment {
                         "com.example.downloadworker.fileprovider",
                         file
                 );
-                imageUris.add(uri);
+                newImageUris.add(uri);
             }
         }
 
-        int itemCount = imageUris.size();
-        if (startPosition > 0) {
-            imageAdapter.notifyItemRangeRemoved(0, startPosition);
-        }
-        if (itemCount > 0) {
-            imageAdapter.notifyItemRangeInserted(0, itemCount);
-        }
+        // Compute the diff between the old and new lists
+        DiffUtil.DiffResult diffResult = DiffUtil.calculateDiff(new UriDiffCallback(imageUris, newImageUris));
+        imageUris.clear();
+        imageUris.addAll(newImageUris);
+        diffResult.dispatchUpdatesTo(imageAdapter);
     }
 
     private void handleImageClick(Uri uri) {
@@ -89,5 +89,36 @@ public class ImageGridFragment extends Fragment {
         viewIntent.setDataAndType(uri, "image/*");
         viewIntent.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
         startActivity(viewIntent);
+    }
+
+    // DiffUtil callback to compare old and new URI lists
+    private static class UriDiffCallback extends DiffUtil.Callback {
+        private final List<Uri> oldList;
+        private final List<Uri> newList;
+
+        UriDiffCallback(List<Uri> oldList, List<Uri> newList) {
+            this.oldList = oldList;
+            this.newList = newList;
+        }
+
+        @Override
+        public int getOldListSize() {
+            return oldList.size();
+        }
+
+        @Override
+        public int getNewListSize() {
+            return newList.size();
+        }
+
+        @Override
+        public boolean areItemsTheSame(int oldItemPosition, int newItemPosition) {
+            return oldList.get(oldItemPosition).equals(newList.get(newItemPosition));
+        }
+
+        @Override
+        public boolean areContentsTheSame(int oldItemPosition, int newItemPosition) {
+            return oldList.get(oldItemPosition).equals(newList.get(newItemPosition));
+        }
     }
 }
