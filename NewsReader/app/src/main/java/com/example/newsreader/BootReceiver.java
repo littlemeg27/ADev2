@@ -10,6 +10,10 @@ import androidx.work.PeriodicWorkRequest;
 import androidx.work.WorkManager;
 import java.util.concurrent.TimeUnit;
 
+// Brenna Pavlinchak
+// AD2 - C202503
+// BootReceiver
+
 public class BootReceiver extends BroadcastReceiver
 {
     private static final String TAG = "BootReceiver";

@@ -12,6 +12,10 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
+// Brenna Pavlinchak
+// AD2 - C202503
+// SaveWorker
+
 public class SaveWorker extends Worker
 {
     private static final String TAG = "SaveWorker";

@@ -5,16 +5,23 @@ import android.content.Context;
 import android.content.Intent;
 import android.util.Log;
 
-public class UIRefreshReceiver extends BroadcastReceiver {
+// Brenna Pavlinchak
+// AD2 - C202503
+// UIRefreshReceiver
+
+public class UIRefreshReceiver extends BroadcastReceiver
+{
     private static final String TAG = "NewsListFragment";
     private final NewsListFragment fragment;
 
-    public UIRefreshReceiver(NewsListFragment fragment) {
+    public UIRefreshReceiver(NewsListFragment fragment)
+    {
         this.fragment = fragment;
     }
 
     @Override
-    public void onReceive(Context context, Intent intent) {
+    public void onReceive(Context context, Intent intent)
+    {
         Log.d(TAG, "Received UI refresh broadcast");
         fragment.refreshArticles();
     }

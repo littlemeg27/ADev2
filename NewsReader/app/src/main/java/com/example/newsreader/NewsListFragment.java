@@ -20,6 +20,9 @@ import java.util.Collections;
 import java.util.List;
 import android.annotation.SuppressLint;
 
+// Brenna Pavlinchak
+// AD2 - C202503
+// NewsListFragment
 
 public class NewsListFragment extends ListFragment
 {

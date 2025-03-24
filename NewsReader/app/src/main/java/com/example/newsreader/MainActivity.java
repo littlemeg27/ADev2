@@ -16,51 +16,64 @@ import androidx.work.PeriodicWorkRequest;
 import androidx.work.WorkManager;
 import java.util.concurrent.TimeUnit;
 
-public class MainActivity extends AppCompatActivity {
+// Brenna Pavlinchak
+// AD2 - C202503
+// MainActivity
+
+public class MainActivity extends AppCompatActivity
+{
     private static final String TAG = "MainActivity";
     private ActivityResultLauncher<String> requestPermissionLauncher;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState)
+    {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        // Initialize the permission launcher
         requestPermissionLauncher = registerForActivityResult(new ActivityResultContracts.RequestPermission(),
-                isGranted -> {
-                    if (isGranted) {
+                isGranted ->
+                {
+                    if (isGranted)
+                    {
                         Log.d(TAG, "POST_NOTIFICATIONS permission granted");
                         schedulePeriodicWork();
-                    } else {
+                    }
+                    else
+                    {
                         Log.w(TAG, "POST_NOTIFICATIONS permission denied");
-                        // Proceed without notifications or inform the user
                     }
                 });
 
-        // Check and request POST_NOTIFICATIONS permission for Android 13+
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU)
+        {
             if (ContextCompat.checkSelfPermission(this, Manifest.permission.POST_NOTIFICATIONS)
-                    != PackageManager.PERMISSION_GRANTED) {
+                    != PackageManager.PERMISSION_GRANTED)
+            {
                 Log.d(TAG, "Requesting POST_NOTIFICATIONS permission");
                 requestPermissionLauncher.launch(Manifest.permission.POST_NOTIFICATIONS);
-            } else {
+            }
+            else
+            {
                 Log.d(TAG, "POST_NOTIFICATIONS permission already granted");
                 schedulePeriodicWork();
             }
-        } else {
-            // For pre-Android 13, no permission is needed
+        }
+        else
+        {
             schedulePeriodicWork();
         }
 
-        // Load the NewsListFragment
-        if (savedInstanceState == null) {
+        if (savedInstanceState == null)
+        {
             FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
             transaction.replace(R.id.fragment_container, new NewsListFragment());
             transaction.commit();
         }
     }
 
-    private void schedulePeriodicWork() {
+    private void schedulePeriodicWork()
+    {
         Log.d(TAG, "Scheduling periodic work");
         Constraints constraints = new Constraints.Builder()
                 .setRequiredNetworkType(NetworkType.CONNECTED)

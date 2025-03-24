@@ -22,6 +22,10 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
+// Brenna Pavlinchak
+// AD2 - C202503
+// DownloadWorker
+
 public class DownloadWorker extends Worker
 {
     private static final String TAG = "DownloadWorker";
@@ -37,7 +41,8 @@ public class DownloadWorker extends Worker
     @Override
     public Result doWork()
     {
-        try {
+        try
+        {
             String jsonResponse = downloadData();
             if (jsonResponse == null)
             {
@@ -86,6 +91,7 @@ public class DownloadWorker extends Worker
         {
             response.append(line);
         }
+
         reader.close();
         connection.disconnect();
         return response.toString();

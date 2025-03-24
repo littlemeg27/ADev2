@@ -2,6 +2,10 @@ package com.example.newsreader;
 
 import java.io.Serializable;
 
+// Brenna Pavlinchak
+// AD2 - C202503
+// NewsArticle
+
 public class NewsArticle implements Serializable
 {
     private String title;
