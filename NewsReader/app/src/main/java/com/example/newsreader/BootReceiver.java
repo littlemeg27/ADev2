@@ -10,18 +10,22 @@ import androidx.work.PeriodicWorkRequest;
 import androidx.work.WorkManager;
 import java.util.concurrent.TimeUnit;
 
-public class BootReceiver extends BroadcastReceiver {
+public class BootReceiver extends BroadcastReceiver
+{
     private static final String TAG = "BootReceiver";
 
     @Override
-    public void onReceive(Context context, Intent intent) {
-        if (Intent.ACTION_BOOT_COMPLETED.equals(intent.getAction())) {
+    public void onReceive(Context context, Intent intent)
+    {
+        if (Intent.ACTION_BOOT_COMPLETED.equals(intent.getAction()))
+        {
             Log.d(TAG, "Boot completed, scheduling periodic work");
             schedulePeriodicWork(context);
         }
     }
 
-    private void schedulePeriodicWork(Context context) {
+    private void schedulePeriodicWork(Context context)
+    {
         Constraints constraints = new Constraints.Builder()
                 .setRequiredNetworkType(NetworkType.CONNECTED)
                 .build();

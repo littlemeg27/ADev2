@@ -8,17 +8,19 @@ import androidx.work.Data;
 import androidx.work.OneTimeWorkRequest;
 import androidx.work.WorkManager;
 
-public class NotificationReceiver extends BroadcastReceiver {
+public class NotificationReceiver extends BroadcastReceiver
+{
     private static final String TAG = "NotificationReceiver";
 
     @Override
-    public void onReceive(Context context, Intent intent) {
-        if ("com.example.newsapp.ACTION_SAVE_ARTICLE".equals(intent.getAction())) {
+    public void onReceive(Context context, Intent intent)
+    {
+        if ("com.example.newsreader.ACTION_SAVE_ARTICLE".equals(intent.getAction()))
+        {
             String title = intent.getStringExtra("article_title");
             String url = intent.getStringExtra("article_url");
             Log.d(TAG, "Received save action for article: " + title);
 
-            // Schedule SaveWorker
             Data inputData = new Data.Builder()
                     .putString("article_title", title)
                     .putString("article_url", url)

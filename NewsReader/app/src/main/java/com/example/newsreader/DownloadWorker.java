@@ -22,52 +22,58 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
-public class DownloadWorker extends Worker {
+public class DownloadWorker extends Worker
+{
     private static final String TAG = "DownloadWorker";
     private static final String API_URL = "https://www.reddit.com/r/NewsToday/hot.json";
-    private static final String CHANNEL_ID = "news_channel";
     private static final int NOTIFICATION_ID = 1;
 
-    public DownloadWorker(@NonNull Context context, @NonNull WorkerParameters params) {
+    public DownloadWorker(@NonNull Context context, @NonNull WorkerParameters params)
+    {
         super(context, params);
     }
 
     @NonNull
     @Override
-    public Result doWork() {
+    public Result doWork()
+    {
         try {
-            // Fetch data from Reddit API
             String jsonResponse = downloadData();
-            if (jsonResponse == null) {
+            if (jsonResponse == null)
+            {
                 Log.e(TAG, "Failed to download data");
                 return Result.failure();
             }
 
-            // Parse JSON and select a random article
             NewsArticle article = parseRandomArticle(jsonResponse);
-            if (article == null) {
+            if (article == null)
+            {
                 Log.e(TAG, "Failed to parse article");
                 return Result.failure();
             }
 
-            // Generate notification
             generateNotification(article);
             Log.d(TAG, "Notification generated for article: " + article.getTitle());
             return Result.success();
-        } catch (Exception e) {
+        }
+        catch (Exception e)
+        {
             Log.e(TAG, "Error in DownloadWorker", e);
             return Result.failure();
         }
     }
 
-    private String downloadData() throws Exception {
+    private String downloadData() throws Exception
+    {
         URL url = new URL(API_URL);
         HttpURLConnection connection = (HttpURLConnection) url.openConnection();
         connection.setRequestMethod("GET");
         connection.setRequestProperty("User-Agent", "Mozilla/5.0");
 
         int responseCode = connection.getResponseCode();
-        if (responseCode != HttpURLConnection.HTTP_OK) {
+
+        if (responseCode != HttpURLConnection.HTTP_OK)
+        {
             Log.e(TAG, "HTTP error code: " + responseCode);
             return null;
         }
@@ -75,7 +81,9 @@ public class DownloadWorker extends Worker {
         BufferedReader reader = new BufferedReader(new InputStreamReader(connection.getInputStream()));
         StringBuilder response = new StringBuilder();
         String line;
-        while ((line = reader.readLine()) != null) {
+
+        while ((line = reader.readLine()) != null)
+        {
             response.append(line);
         }
         reader.close();
@@ -83,22 +91,28 @@ public class DownloadWorker extends Worker {
         return response.toString();
     }
 
-    private NewsArticle parseRandomArticle(String jsonResponse) throws Exception {
+    private NewsArticle parseRandomArticle(String jsonResponse) throws Exception
+    {
         JSONObject jsonObject = new JSONObject(jsonResponse);
         JSONObject data = jsonObject.getJSONObject("data");
         JSONArray children = data.getJSONArray("children");
 
         List<NewsArticle> articles = new ArrayList<>();
-        for (int i = 0; i < children.length(); i++) {
+
+        for (int i = 0; i < children.length(); i++)
+        {
             JSONObject post = children.getJSONObject(i).getJSONObject("data");
             String title = post.optString("title");
             String url = post.optString("url");
-            if (title != null && !title.isEmpty() && url != null && !url.isEmpty()) {
+
+            if (!title.isEmpty() && !url.isEmpty())
+            {
                 articles.add(new NewsArticle(title, url));
             }
         }
 
-        if (articles.isEmpty()) {
+        if (articles.isEmpty())
+        {
             return null;
         }
 
@@ -106,44 +120,42 @@ public class DownloadWorker extends Worker {
         return articles.get(random.nextInt(articles.size()));
     }
 
-    private void generateNotification(NewsArticle article) {
+    private void generateNotification(NewsArticle article)
+    {
         Context context = getApplicationContext();
         NotificationManager notificationManager = (NotificationManager) context.getSystemService(Context.NOTIFICATION_SERVICE);
 
-        // Create notification channel (required for API 26+)
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O)
+        {
             NotificationChannel channel = new NotificationChannel(
-                    CHANNEL_ID,
+                    context.getString(R.string.notification_channel_id),
                     context.getString(R.string.notification_channel_name),
                     NotificationManager.IMPORTANCE_DEFAULT
             );
             notificationManager.createNotificationChannel(channel);
         }
 
-        // Create PendingIntent for viewing the article (ACTION_VIEW)
         Intent viewIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(article.getUrl()));
         PendingIntent viewPendingIntent = PendingIntent.getActivity(
                 context,
                 0,
                 viewIntent,
-                PendingIntent.FLAG_UPDATE_CURRENT | (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M ? PendingIntent.FLAG_IMMUTABLE : 0)
+                PendingIntent.FLAG_UPDATE_CURRENT | PendingIntent.FLAG_IMMUTABLE
         );
 
-        // Create PendingIntent for saving the article (Broadcast)
-        Intent saveIntent = new Intent("com.example.newsapp.ACTION_SAVE_ARTICLE");
+        Intent saveIntent = new Intent("com.example.newsreader.ACTION_SAVE_ARTICLE");
         saveIntent.putExtra("article_title", article.getTitle());
         saveIntent.putExtra("article_url", article.getUrl());
         PendingIntent savePendingIntent = PendingIntent.getBroadcast(
                 context,
                 0,
                 saveIntent,
-                PendingIntent.FLAG_UPDATE_CURRENT | (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M ? PendingIntent.FLAG_IMMUTABLE : 0)
+                PendingIntent.FLAG_UPDATE_CURRENT | PendingIntent.FLAG_IMMUTABLE
         );
 
-        // Build the notification
-        NotificationCompat.Builder builder = new NotificationCompat.Builder(context, CHANNEL_ID)
+        NotificationCompat.Builder builder = new NotificationCompat.Builder(context, context.getString(R.string.notification_channel_id))
                 .setSmallIcon(R.drawable.ic_save)
-                .setContentTitle("News Article")
+                .setContentTitle(context.getString(R.string.notification_title))
                 .setContentText(article.getTitle())
                 .setStyle(new NotificationCompat.BigTextStyle().bigText(article.getTitle()))
                 .setContentIntent(viewPendingIntent)

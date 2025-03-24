@@ -2,9 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.newsreader">
 
-    <!-- Permissions -->
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
 
     <application
         android:allowBackup="true"
@@ -12,9 +12,8 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/Theme.NewsReader">
 
-        <!-- Main Activity -->
         <activity
             android:name=".MainActivity"
             android:exported="true">
@@ -24,7 +23,6 @@
             </intent-filter>
         </activity>
 
-        <!-- Boot Receiver -->
         <receiver
             android:name=".BootReceiver"
             android:exported="true">
@@ -33,12 +31,11 @@
             </intent-filter>
         </receiver>
 
-        <!-- Notification Receiver -->
         <receiver
             android:name=".NotificationReceiver"
             android:exported="false">
             <intent-filter>
-                <action android:name="com.example.newsapp.ACTION_SAVE_ARTICLE" />
+                <action android:name="com.example.newsreader.ACTION_SAVE_ARTICLE" />
             </intent-filter>
         </receiver>
     </application>
