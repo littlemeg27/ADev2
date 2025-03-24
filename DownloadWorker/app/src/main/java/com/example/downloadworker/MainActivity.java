@@ -16,7 +16,6 @@ import androidx.work.Constraints;
 import androidx.work.NetworkType;
 import androidx.work.OneTimeWorkRequest;
 import androidx.work.WorkManager;
-import com.example.downloadworker.R;
 
 import java.util.Map;
 
