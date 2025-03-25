@@ -42,17 +42,120 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="52b622aa-ff39-438d-a297-bd2e82c04d80" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../AppB/app/src/main/res/drawable/ic_photo_library.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../AppB/app/src/main/res/layout/fragment_image_grid.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AppB/app/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/../AppB/app/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AppB/app/src/main/java/com/example/appb/ImageDisplayFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/../AppB/app/src/main/java/com/example/appb/ImageDisplayFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AppB/app/src/main/res/layout/fragment_image_display.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../AppB/app/src/main/res/layout/fragment_image_display.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AppB/app/src/main/res/values-night/themes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../AppB/app/src/main/res/values-night/themes.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AppB/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../AppB/app/src/main/res/values/strings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AppB/app/src/main/res/values/themes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../AppB/app/src/main/res/values/themes.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AppB/gradle/libs.versions.toml" beforeDir="false" afterPath="$PROJECT_DIR$/../AppB/gradle/libs.versions.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app-release.apk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/release/baselineProfiles/0/app-release.dm" beforeDir="false" afterPath="$PROJECT_DIR$/app/release/baselineProfiles/0/app-release.dm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/release/baselineProfiles/1/app-release.dm" beforeDir="false" afterPath="$PROJECT_DIR$/app/release/baselineProfiles/1/app-release.dm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AppB/app-release.apk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AppB/app/release/baselineProfiles/0/app-release.dm" beforeDir="false" afterPath="$PROJECT_DIR$/../AppB/app/release/baselineProfiles/0/app-release.dm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AppB/app/release/baselineProfiles/1/app-release.dm" beforeDir="false" afterPath="$PROJECT_DIR$/../AppB/app/release/baselineProfiles/1/app-release.dm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BrennaPavlinchak2.2_A/.idea/AndroidProjectSystem.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BrennaPavlinchak2.2_A/.idea/caches/deviceStreaming.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BrennaPavlinchak2.2_A/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BrennaPavlinchak2.2_A/.idea/deploymentTargetSelector.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BrennaPavlinchak2.2_A/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BrennaPavlinchak2.2_A/.idea/migrations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BrennaPavlinchak2.2_A/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BrennaPavlinchak2.2_A/.idea/runConfigurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BrennaPavlinchak2.2_A/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BrennaPavlinchak2.2_A/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BrennaPavlinchak2.2_A/app-release.apk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BrennaPavlinchak2.2_A/app/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BrennaPavlinchak2.2_A/app/build.gradle.kts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BrennaPavlinchak2.2_A/app/proguard-rules.pro" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BrennaPavlinchak2.2_A/app/release/baselineProfiles/0/app-release.dm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BrennaPavlinchak2.2_A/app/release/baselineProfiles/1/app-release.dm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BrennaPavlinchak2.2_A/app/release/output-metadata.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BrennaPavlinchak2.2_A/app/src/androidTest/java/com/example/appa/ExampleInstrumentedTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BrennaPavlinchak2.2_A/app/src/main/AndroidManifest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BrennaPavlinchak2.2_A/app/src/main/java/com/example/appa/ImageAdapter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BrennaPavlinchak2.2_A/app/src/main/java/com/example/appa/ImageGridFragment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BrennaPavlinchak2.2_A/app/src/main/java/com/example/appa/MainActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BrennaPavlinchak2.2_A/app/src/main/res/drawable/ic_launcher_background.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BrennaPavlinchak2.2_A/app/src/main/res/drawable/ic_launcher_foreground.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BrennaPavlinchak2.2_A/app/src/main/res/layout/activity_main.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BrennaPavlinchak2.2_A/app/src/main/res/layout/fragment_image_grid.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BrennaPavlinchak2.2_A/app/src/main/res/layout/item_image.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BrennaPavlinchak2.2_A/app/src/main/res/menu/menu_main.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BrennaPavlinchak2.2_A/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BrennaPavlinchak2.2_A/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BrennaPavlinchak2.2_A/app/src/main/res/mipmap-hdpi/ic_launcher.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BrennaPavlinchak2.2_A/app/src/main/res/mipmap-hdpi/ic_launcher_round.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BrennaPavlinchak2.2_A/app/src/main/res/mipmap-mdpi/ic_launcher.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BrennaPavlinchak2.2_A/app/src/main/res/mipmap-mdpi/ic_launcher_round.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BrennaPavlinchak2.2_A/app/src/main/res/mipmap-xhdpi/ic_launcher.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BrennaPavlinchak2.2_A/app/src/main/res/mipmap-xhdpi/ic_launcher_round.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BrennaPavlinchak2.2_A/app/src/main/res/mipmap-xxhdpi/ic_launcher.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BrennaPavlinchak2.2_A/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BrennaPavlinchak2.2_A/app/src/main/res/mipmap-xxxhdpi/ic_launcher.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BrennaPavlinchak2.2_A/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BrennaPavlinchak2.2_A/app/src/main/res/values-night/themes.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BrennaPavlinchak2.2_A/app/src/main/res/values/colors.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BrennaPavlinchak2.2_A/app/src/main/res/values/strings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BrennaPavlinchak2.2_A/app/src/main/res/values/themes.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BrennaPavlinchak2.2_A/app/src/main/res/xml/backup_rules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BrennaPavlinchak2.2_A/app/src/main/res/xml/data_extraction_rules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BrennaPavlinchak2.2_A/app/src/main/res/xml/file_paths.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BrennaPavlinchak2.2_A/app/src/test/java/com/example/appa/ExampleUnitTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BrennaPavlinchak2.2_A/build.gradle.kts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BrennaPavlinchak2.2_A/build/reports/problems/problems-report.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BrennaPavlinchak2.2_A/gradle.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BrennaPavlinchak2.2_A/gradle/libs.versions.toml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BrennaPavlinchak2.2_A/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BrennaPavlinchak2.2_A/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BrennaPavlinchak2.2_A/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BrennaPavlinchak2.2_A/settings.gradle.kts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BrennaPavlinchak2.2_B/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BrennaPavlinchak2.2_B/.idea/AndroidProjectSystem.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BrennaPavlinchak2.2_B/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BrennaPavlinchak2.2_B/.idea/deploymentTargetSelector.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BrennaPavlinchak2.2_B/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BrennaPavlinchak2.2_B/.idea/migrations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BrennaPavlinchak2.2_B/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BrennaPavlinchak2.2_B/.idea/runConfigurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BrennaPavlinchak2.2_B/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BrennaPavlinchak2.2_B/AppB" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BrennaPavlinchak2.2_B/app-release.apk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BrennaPavlinchak2.2_B/app/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BrennaPavlinchak2.2_B/app/build.gradle.kts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BrennaPavlinchak2.2_B/app/proguard-rules.pro" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BrennaPavlinchak2.2_B/app/release/baselineProfiles/0/app-release.dm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BrennaPavlinchak2.2_B/app/release/baselineProfiles/1/app-release.dm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BrennaPavlinchak2.2_B/app/release/output-metadata.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BrennaPavlinchak2.2_B/app/src/androidTest/java/com/example/appb/ExampleInstrumentedTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BrennaPavlinchak2.2_B/app/src/main/AndroidManifest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BrennaPavlinchak2.2_B/app/src/main/java/com/example/appb/ImageDisplayFragment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BrennaPavlinchak2.2_B/app/src/main/java/com/example/appb/MainActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BrennaPavlinchak2.2_B/app/src/main/res/drawable/ic_launcher_background.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BrennaPavlinchak2.2_B/app/src/main/res/drawable/ic_launcher_foreground.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BrennaPavlinchak2.2_B/app/src/main/res/layout/activity_main.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BrennaPavlinchak2.2_B/app/src/main/res/layout/fragment_image_display.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BrennaPavlinchak2.2_B/app/src/main/res/menu/menu_main.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BrennaPavlinchak2.2_B/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BrennaPavlinchak2.2_B/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BrennaPavlinchak2.2_B/app/src/main/res/mipmap-hdpi/ic_launcher.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BrennaPavlinchak2.2_B/app/src/main/res/mipmap-hdpi/ic_launcher_round.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BrennaPavlinchak2.2_B/app/src/main/res/mipmap-mdpi/ic_launcher.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BrennaPavlinchak2.2_B/app/src/main/res/mipmap-mdpi/ic_launcher_round.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BrennaPavlinchak2.2_B/app/src/main/res/mipmap-xhdpi/ic_launcher.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BrennaPavlinchak2.2_B/app/src/main/res/mipmap-xhdpi/ic_launcher_round.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BrennaPavlinchak2.2_B/app/src/main/res/mipmap-xxhdpi/ic_launcher.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BrennaPavlinchak2.2_B/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BrennaPavlinchak2.2_B/app/src/main/res/mipmap-xxxhdpi/ic_launcher.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BrennaPavlinchak2.2_B/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BrennaPavlinchak2.2_B/app/src/main/res/values-night/themes.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BrennaPavlinchak2.2_B/app/src/main/res/values/colors.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BrennaPavlinchak2.2_B/app/src/main/res/values/strings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BrennaPavlinchak2.2_B/app/src/main/res/values/themes.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BrennaPavlinchak2.2_B/app/src/main/res/xml/backup_rules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BrennaPavlinchak2.2_B/app/src/main/res/xml/data_extraction_rules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BrennaPavlinchak2.2_B/app/src/test/java/com/example/appb/ExampleUnitTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BrennaPavlinchak2.2_B/build.gradle.kts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BrennaPavlinchak2.2_B/gradle.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BrennaPavlinchak2.2_B/gradle/libs.versions.toml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BrennaPavlinchak2.2_B/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BrennaPavlinchak2.2_B/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BrennaPavlinchak2.2_B/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BrennaPavlinchak2.2_B/settings.gradle.kts" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
